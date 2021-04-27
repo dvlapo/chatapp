@@ -299,17 +299,9 @@ ul small {
 }
 @media screen and (max-width: 540px) {
       #more {
-            margin-left: 135px;
+            margin-left: 150px;
       }
-      #images {
-            margin-left: 160px;
-      }
-      .sent {
-            margin-left: 90px;
-      }
-      #notch {
-            left: 12%;
-      }
+      
 }
 
 
