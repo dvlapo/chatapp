@@ -272,7 +272,7 @@ ul small {
             margin-top: 5px; 
       }
       #more {
-            margin-left: 60px;
+            margin-left: 0px;
       }
       #booking {
             display: block;
@@ -295,6 +295,20 @@ ul small {
       }
       .attribution {
             bottom: 0;
+      }
+}
+@media screen and (max-width: 540px) {
+      #more {
+            margin-left: 135px;
+      }
+      #images {
+            margin-left: 160px;
+      }
+      .sent {
+            margin-left: 90px;
+      }
+      #notch {
+            left: 12%;
       }
 }
 
