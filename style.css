@@ -6,69 +6,86 @@
 }
 body {
       font-family: 'Rubik';
-}
-
-#container {
-      display: grid;
-      grid-template-columns: auto auto;
       overflow: hidden;
 }
 
-#design {
-      display: inline-block;
-      background-image: linear-gradient(45deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
-      border-radius: 0 0 50% 50% ;
-      position: relative;
-      right: 20%;
+.purpleback {
+      background-image: linear-gradient(45deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%)  );
       height: 90vh;
-      width: 40vw;
+      width: 40%;
+      position: absolute;
+      z-index: -1;
+      bottom: 10%;
+      left: -15%;
+      border-radius: 0 0 50% 50%;
 }
+.grayback {
+      background-image: linear-gradient(45deg, hsl(0, 0%, 100%),hsl(270, 20%, 96%));
+      height: 60vh;
+      width: 40%;
+      position: absolute;
+      z-index: -1;
+      top: 10%;
+      right: -20%;
+      border-radius: 50% 50% 0 0;
+}
+
+#container {
+      margin: 5% 10%;
+      display: flex;
+}
+
+#top {
+      display: inline-block;
+      flex-basis: 50%;
+      
+}
+
 #booking {
-      position: relative;
-      right: 20px;
-      display: grid;
-      grid-template-columns: auto 60%;
-      color: hsl(299, 65%, 16%);
+      display: inline-grid;
+      
+      flex-basis: 60%;
+      margin-left: 7%;
+      align-content: center;
+      width: 80%;
 }
 
 #simple {
-      position: absolute;
-      top: 40%;
       width: 70%;
 }
 #simple h1 {
       margin-bottom: 20px;
+      font-size: 35px;
+      color: hsl(271, 36%, 24%);
 }
-
-#design2 {
-      background: rgb(251, 250, 250);
-      border-radius: 250px 250px 0 0;
-      position: relative;
-      right: 0;
-      left: 80%;
-      bottom: 0;
-      top: 30%;
-      height: 100vh;
-      z-index: -1;
-      width: 70vh;
+#simple p {
+      color: hsl(270, 7%, 64%);
 }
-
 #illustration {
       display: grid;
-      grid-template-columns: auto;
       background: rgb(255, 255, 255);
-      position: absolute;
       border-radius: 30px;
       padding: 15px;
-      width: 20%;
-      height: 520px;
-      top: 10%;
-      left: 20%;
+      margin-left: 20%;
+      width: 62%;
+      height: fit-content;
       box-shadow: 0 0 25px hsl(264, 30%, 82%);
       font-size: x-small;
 }
 section {
       width: 90%;
+}
+
+#sendtext {
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      font-size: 20px;
+      font-weight: 700;
+      background-color: hsl(271, 36%, 24%);
+      color:white;
+      border: 1px solid hsl(271, 36%, 24%);
+      margin-left: 70px;
 }
 
 
@@ -96,7 +113,7 @@ ul small {
 #status {
       color: white;
       width: 100%;
-      height: 85px;
+      height: 100px;
       font-size: xx-small;
       border-radius: 20px 20px 8px 8px;
       background-image: linear-gradient(45deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
@@ -110,18 +127,18 @@ ul small {
       
 }
 #notch {
-      position: absolute;
-      top: 15px;
-      left: 55px;
+      position: relative;
+      
+      left: 30px;
+      bottom: 42px;
       background-color: white;
       height: 20px;
-      width: 60%;
-      color: black;
+      width: 75%;
       border-radius: 0 0 13px 13px;
 }
 
 #chat {
-      background: rgb(246, 246, 246);
+      background: hsl(270, 20%, 96%);
       border-radius: 20px;
       width: fit-content;
 }
@@ -138,16 +155,16 @@ ul small {
       width: 70%;
       font-size: xx-small;
       height: fit-content;
-      background: rgb(204, 203, 203);
+      background: rgb(236, 235, 235);
       padding: 7px;
       border-radius: 10px;
       margin: 0 0 10px 0;
-      color: hsl(264, 100%, 61%);
+      color: hsl(276, 55%, 52%);
 } 
 #images {
       margin-bottom: 10px;
       display: flex;
-      margin-left: 70px;
+      margin-left: 98px;
 }
 #images * {
       margin-left: 10px;
@@ -162,7 +179,7 @@ ul small {
       padding: 7px;
       border-radius: 10px;
       margin: 0 0 10px 80px; 
-      color: hsl(264, 100%, 61%);
+      color: hsl(271, 15%, 43%);
 }
 .pay {
       height: 33px;
@@ -170,10 +187,11 @@ ul small {
       background-image: linear-gradient(45deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
       margin-bottom: 10px;
       border-radius: 10px 10px 10px 3px;
-      padding-top: 15px;
+      padding-top: 10px;
+      padding-bottom: 10px;
       padding-left: 10px;
       align-content: center;
-      color: hsl(264, 30%, 82%);
+      color: hsl(270, 18%, 93%);
 }
 .pay span {
       margin-right: 8px;
@@ -189,7 +207,7 @@ ul small {
       border-radius: 25px;
       background: white;
       height: 40px;
-      color: hsl(264, 100%, 61%);
+      color: hsl(206, 6%, 79%);
       padding: 10px;
       align-content: center;
       display: grid;
@@ -205,6 +223,78 @@ ul small {
 }
 
 
+@media screen and (max-width: 992px) {
+      body {
+            overflow: visible;
+      }
+      #container {
+            display: flex;
+            flex-direction: column;
+      }
+      .purpleback {
+            height: 70vh;
+            width: 105%;
+            position: absolute;
+            z-index: -1;
+            bottom: 30%;
+            left: -55%;
+      }
+      .grayback {
+            display: none;
+      }
+      .background {
+            overflow: hidden;
+      }
+
+      #illustration {
+            width: fit-content;
+            margin: 40px auto 40px 0;
+      }
+      #status small {
+            font-size: 5px;
+            margin-left: 10px;
+      }
+      .sent {
+            margin-left: 93px;
+      }
+      #images{
+            margin-left: 125px;
+      }
+      
+      #chat {
+            width: 100%;
+      }
+      ul h4, small {
+            margin-left: 10px;
+            grid-row: 1 / 3; 
+            margin-top: -5px; 
+      }
+      #more {
+            margin-left: 120px;
+      }
+      #booking {
+            display: block;
+            text-align: center;
+            justify-content: center;
+            align-content: center;
+            margin-left: 0;
+            flex-basis: 100%;
+            width: 100%;
+      }
+      #booking h1 {
+            font-size: 35px;
+      }
+      #simple {
+            width: 100%;
+            margin-top: 50px;
+      }
+      #simple p {
+            margin-bottom: 40px;
+      }
+      .attribution {
+            bottom: 0;
+      }
+}
 
 
 
@@ -237,7 +327,6 @@ ul small {
 
 
 .attribution {
-      grid-row: 3 / 4;
       position: relative;
       bottom: 0;
 }

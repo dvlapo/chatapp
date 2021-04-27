@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=1024"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
@@ -19,13 +19,14 @@
   </style>
 </head>
 <body>
+    <div class="background">
+        <div class="purpleback"></div>
+        <div class="grayback"></div>
+    </div>
 
 
-
-    <main id="container">
+    <div id="container">
         <div id="top">
-                <!-- THE PURPLE DESIGN -->
-            <section id="design"></section>
                 <!-- THE PHONE ILLUSTRATION -->
             <section id="illustration">  
               <div id="chat">
@@ -50,7 +51,8 @@
                     <p class="pay"><span><i class="fa fa-circle-thin"></i></span>1 hour walk<strong id="amt2">$49</strong></p>
                     <p class="msg">
                       <span>Type a message…</span> 
-                      <i class="fa fa-chevron-circle-right"></i>
+                      <button id="sendtext">></button>
+                      <!-- <i class="fa fa-chevron-circle-right"></i> -->
                     </p>
                   </section> 
                 </div>
@@ -63,16 +65,9 @@
                 <p>Stay in touch with our dog walkers through the chat interface. This makes it easy to 
                     discuss arrangements and make bookings. Once the walk has been completed you can rate 
                     your walker and book again all through the chat.</p>
-                </section>
-
-          <!-- THE GRAY DESIGN -->
-            <div id="design2"></div>
-             
+                </section>        
         </div>
-
-        
-    </main>
-  
+      </div>
 
 
  
