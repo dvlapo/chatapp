@@ -67,7 +67,7 @@ body {
       border-radius: 30px;
       padding: 15px;
       margin-left: 20%;
-      width: 62%;
+      width: 55%;
       height: fit-content;
       box-shadow: 0 0 25px hsl(264, 30%, 82%);
       font-size: x-small;
@@ -90,12 +90,11 @@ section {
 
 
 ul h4, small {
-      margin-left: 15px;
+      margin-left: 10px;
       grid-row: 1 / 2;  
 }
 ul small {
-      font-size: 8px;
-      margin-left: 15px;
+      font-size: 5px;
 }
 
 #avatar {
@@ -103,7 +102,7 @@ ul small {
       border-radius: 50% !important;
 }
 #sam {
-      padding-top: 5px;
+      padding-top: 1px;
 }
 
 
@@ -117,7 +116,7 @@ ul small {
       font-size: xx-small;
       border-radius: 20px 20px 8px 8px;
       background-image: linear-gradient(45deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
-      padding: 40px 10px 10px 10px;
+      padding: 25px 10px 10px 10px;
 }
 #status ul {
       display: flex;
@@ -128,9 +127,8 @@ ul small {
 }
 #notch {
       position: relative;
-      
       left: 30px;
-      bottom: 42px;
+      bottom: 25px;
       background-color: white;
       height: 20px;
       width: 75%;
@@ -140,7 +138,7 @@ ul small {
 #chat {
       background: hsl(270, 20%, 96%);
       border-radius: 20px;
-      width: fit-content;
+      width: 100%;
 }
 
 
@@ -164,7 +162,7 @@ ul small {
 #images {
       margin-bottom: 10px;
       display: flex;
-      margin-left: 98px;
+      margin-left: 80px;
 }
 #images * {
       margin-left: 10px;
@@ -247,18 +245,22 @@ ul small {
       }
 
       #illustration {
-            width: fit-content;
+            width: 80%;
             margin: 40px auto 40px 0;
+      }
+      #notch {
+            bottom: 30px;
+            left: 25px;
       }
       #status small {
             font-size: 5px;
             margin-left: 10px;
       }
       .sent {
-            margin-left: 93px;
+            margin-left: 70px;
       }
       #images{
-            margin-left: 125px;
+            margin-left: 60px;
       }
       
       #chat {
@@ -267,10 +269,10 @@ ul small {
       ul h4, small {
             margin-left: 10px;
             grid-row: 1 / 3; 
-            margin-top: -5px; 
+            margin-top: 5px; 
       }
       #more {
-            margin-left: 120px;
+            margin-left: 60px;
       }
       #booking {
             display: block;
@@ -279,7 +281,7 @@ ul small {
             align-content: center;
             margin-left: 0;
             flex-basis: 100%;
-            width: 100%;
+            width: auto;
       }
       #booking h1 {
             font-size: 35px;
