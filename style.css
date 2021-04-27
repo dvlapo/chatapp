@@ -85,7 +85,7 @@ section {
       background-color: hsl(271, 36%, 24%);
       color:white;
       border: 1px solid hsl(271, 36%, 24%);
-      margin-left: 70px;
+      margin-left: 20px;
 }
 
 
@@ -201,7 +201,7 @@ ul small {
       margin-left: 49px;
 }
 .msg {
-      width: 112%;
+      width: 100%;
       border-radius: 25px;
       background: white;
       height: 40px;
@@ -248,19 +248,25 @@ ul small {
             width: 80%;
             margin: 40px auto 40px 0;
       }
+      #interface {
+            max-width: 100%;
+      }
       #notch {
             bottom: 30px;
             left: 25px;
+      }
+      #status {
+            width: 100%;
       }
       #status small {
             font-size: 5px;
             margin-left: 10px;
       }
       .sent {
-            margin-left: 70px;
+            margin-left: 50px;
       }
       #images{
-            margin-left: 60px;
+            margin-left: 30px;
       }
       
       #chat {
@@ -272,7 +278,7 @@ ul small {
             margin-top: 5px; 
       }
       #more {
-            margin-left: 0px;
+            margin-left: 60px;
       }
       #booking {
             display: block;
@@ -296,12 +302,6 @@ ul small {
       .attribution {
             bottom: 0;
       }
-}
-@media screen and (max-width: 540px) {
-      #more {
-            margin-left: 150px;
-      }
-      
 }
 
 
