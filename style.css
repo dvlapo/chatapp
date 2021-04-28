@@ -11,23 +11,23 @@ body {
 
 .purpleback {
       background-image: linear-gradient(45deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%)  );
-      height: 90vh;
+      height: 90rem;
       width: 40%;
       position: absolute;
       z-index: -1;
-      bottom: 10%;
+      bottom: 15%;
       left: -15%;
-      border-radius: 0 0 50% 50%;
+      border-radius: 0 0 350px 350px;
 }
 .grayback {
       background-image: linear-gradient(45deg, hsl(0, 0%, 100%),hsl(270, 20%, 96%));
-      height: 60vh;
+      height: 60rem;
       width: 40%;
       position: absolute;
       z-index: -1;
-      top: 10%;
-      right: -20%;
-      border-radius: 50% 50% 0 0;
+      top: 15%;
+      right: -15%;
+      border-radius: 350px 350px 0 0;
 }
 
 #container {
@@ -112,7 +112,7 @@ ul small {
 #status {
       color: white;
       width: 100%;
-      height: 100px;
+      height: 86px;
       font-size: xx-small;
       border-radius: 20px 20px 8px 8px;
       background-image: linear-gradient(45deg, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
@@ -223,7 +223,8 @@ ul small {
 
 @media screen and (max-width: 992px) {
       body {
-            overflow: visible;
+            overflow-x: hidden;
+            overflow-y: visible;
       }
       #container {
             display: flex;
@@ -241,12 +242,12 @@ ul small {
             display: none;
       }
       .background {
-            overflow: hidden;
+            overflow-x: hidden ;
       }
 
       #illustration {
             width: 80%;
-            margin: 40px auto 40px 0;
+            margin: 40px auto 40px auto;
       }
       #interface {
             max-width: 100%;
@@ -287,7 +288,7 @@ ul small {
             align-content: center;
             margin-left: 0;
             flex-basis: 100%;
-            width: auto;
+            width: 100%;
       }
       #booking h1 {
             font-size: 35px;
